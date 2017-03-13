@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html>
 
 <head>
@@ -7,20 +6,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Assets/css/main.css">
+    <!--CABIN GOOGLE FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header id="header">
-        <div>Signed in as <span id="user"></span></div>
-        <div><span>Sign out</span></div>
+    <header>
+        <div>Signed in as <span id="user"></span><i class="fa fa-arrow-circle-right fa-lg"></i><span>Sign out</span></div>
     </header>
     <div id="main-container">
-        <span>Cruise</span>
+        <h1>Cruise</h1>
+        <div>
+            <div class="tablinks">DASHBOARD</div>
+            <div class="tablinks">MY CRUISE</div>
+            <div class="tablinks">AGENTS</div>
+            <div class="tablinks">HELP</div>  
+        </div>
         <div id="table-container">
             <span>Agents</span>
-            <button>All</button>
-            <button>Physical</button>
-            <button>Virtual</button>
+            <button class="display">All</button>
+            <button class="display">Physical</button>
+            <button class="display">Virtual</button>
             <div id="left-content">
                 <div class="idle">
                     <span class="circle"></span>
@@ -29,65 +37,83 @@
                         <span>| idle 192.168.1.2 | /var/lib/cruise-agent</span>
                     </div>
                     <div class="bottom-text">
-                        <span><a href="#">Specify Resources</a> | Resources: </span>
-                        <span class="resources">Ubuntu</span>
-                        <span class="resources">Firefox3</span>
-                        <span class="resources">core-duo</span>
-                        <span>Deny</span>
+                        <span><i class="fa fa-plus" aria-hidden="true"></i><a href="#">Specify Resources</a> | Resources: </span>
+                        <span class="resources">ubuntu</span><i class="fa fa-window-close-o fa-lg"></i>
+                        <span class="resources">firefox3</span><i class="fa fa-window-close-o fa-lg"></i>
+                        <span class="resources">core-duo</span><i class="fa fa-window-close-o fa-lg"></i>
+                        <i class="fa fa-ban"></i><span>Deny</span>
                     </div>
-
                 </div>
                 <div class="building">
                     <span class="circle"></span>
                     <div class="top-text">
                         <span class="link">bjstdmngbgr03.thoughtworks.com</span>
-                        <span>| idle 192.168.1.3 | /var/lib/cruise-agent</span>
+                        <span>| building 192.168.1.3 | /var/lib/cruise-agent</span>
                     </div>
                     <div class="bottom-text">
                         <span><a href="#">Specify Resources</a> | Resources: </span>
-                        <span class="resources">Ubuntu</span>
-                        <span class="resources">Firefox3</span>
-                        <span class="resources">mysql</span>
-                        <span class="resources">core-duo</span>
-                        <span>Deny</span>
+                        <span class="resources">ubuntu <i class="fa fa-times fa-lg" ></i></span>
+                        <span class="resources">firefox3 <i class="fa fa-times fa-lg" ></i></span>
+                        <span class="resources">mysql <i class="fa fa-times fa-lg" ></i></span>
+                        <span class="resources">core-duo <i class="fa fa-times fa-lg"></i></span>
                     </div>
                 </div>
                 <div class="building">
                     <span class="circle"></span>
                     <div class="top-text">
-                        <span class="link">bjstdmngbgr4.thoughtworks.com</span>
-                        <span>| idle 192.168.1.4 | /var/lib/cruise-agent</span>
+                        <span class="link">bjstdmngbgr04.thoughtworks.com</span>
+                        <span>| building 192.168.1.4 | /var/lib/cruise-agent</span>
                     </div>
                     <div class="bottom-text">
                         <span><a href="#">Specify Resources</a> | Resources: </span>
-                        <span class="resources">Ubuntu</span>
-                        <span class="resources">Firefox3</span>
-                        <span class="resources">mysql</span>
-                        <span class="resources">core-duo</span>
-                        <span>Deny</span>
+                        <span class="resources">Ubuntu </span><i class="fa fa-window-close-o fa-lg"></i>
+                        <span class="resources">Firefox3 </span><i class="fa fa-window-close-o fa-lg"></i>
+                        <span class="resources">mysql</span> <i class="fa fa-window-close-o fa-lg"></i>
+                        <span class="resources">core-duo </span><i class="fa fa-window-close-o fa-lg"></i>
                     </div>
                 </div>
                 <div class="idle">
                     <span class="circle"></span>
                     <div class="top-text">
-                        <span class="link">bjstdmngbgr02.thoughtworks.com</span>
-                        <span>| idle 192.168.1.2 | /var/lib/cruise-agent</span>
+                        <span class="link">bjstdmngbgr05.thoughtworks.com</span>
+                        <span>| idle 192.168.1.5 | /var/lib/cruise-agent</span>
                     </div>
                     <div class="bottom-text">
                         <span><a href="#">Specify Resources</a> | Resources: </span>
-                        <span class="resources">Ubuntu</span>
-                        <span>Deny</span>
+                        <span class="resources">Ubuntu <i class="fa fa-window-close-o fa-lg"></i></span>
+                        <i class="fa fa-ban fa-lg"></i><span>Deny</span>
                     </div>
                 </div>
             </div>
             <div id="right-content">
-
+                <div id="Summary">
+                    <h5>Summary</h5>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td>building</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>idle</td>
+                            <td>2</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="History">
+                    <h5>History</h5>
+                    <hr>
+                    <div id="history-list">
+                        <p>bjstdmngbgr02/Acceptance_test</p>
+                        <p>bjstdmngbgr02/Acceptance_test</p>
+                        <p>bjstdmngbgr02/Acceptance_test</p>
+                        <p>bjstdmngbgr02/Acceptance_test</p>
+                        <p>bjstdmngbgr02/Acceptance_test</p>
+                    </div>
+                </div>
             </div>
         </div>
-
-
     </div>
-
     <script type="text/javascript" src="Assets/js/main.js"></script>
 </body>
 
