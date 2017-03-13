@@ -1,0 +1,168 @@
+html {
+    background-color: white;
+    font-family: Cabin;
+}
+
+header {
+    margin-right: 15px;
+    position: absolute;
+    right: 1%;
+}
+
+h1 {
+    font-size: 30px;
+    width: 80px;
+    padding-top: 4%;
+    padding-left: 18%;
+}
+
+span,
+p,
+td,
+i {
+    font-size: 13px;
+}
+
+a {
+    margin-right: 10px;
+}
+
+h5 {  
+    border-bottom: 1px solid gray;
+}
+
+.fa-arrow-circle-right {
+    margin-right: 5px;
+    margin-left: 12px;
+}
+
+.tablinks {
+    width: 100px;
+    float: right;
+}
+
+#sub-container {
+    background-color: white;
+    width: 870px;
+    height: 415px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#table-container {
+    background-color: white;
+    width: 870px;
+    height: 390px;    
+    position: absolute; 
+    bottom: 0; 
+}
+
+#agents {
+    float: left;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.display {
+    float: left;
+    margin: 0 10px 0 10px;
+}
+
+#left-content {
+    float: left;
+    bottom: 0;
+    position: absolute;
+    background-color: white;
+    width: 590px;
+    height: 350px;
+    margin-top: 0px;
+    padding-top: 2px;
+}
+
+#right-content {
+    float: right;
+    margin-top: 8px;
+    background-color: white;
+    width: 280px;
+    height: 352px;
+}
+
+.circle {
+    float: left;
+	width: 35px;
+	height: 35px;
+	background: gray;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+    margin: 10px 8px 10px 15px;
+    display: block;
+}
+
+.link {
+    font-weight: bold;
+}
+
+.building {
+    background-color: orange;
+    width: 570px;
+    height: 55px;
+    margin: 10px 10px 10px 10px;
+}
+
+.idle {
+    background-color: greenyellow;
+    width: 570px;
+    height: 55px;
+    margin: 10px 10px 10px 10px;
+}
+
+.top-text {
+    height: 35%;
+    padding-top: 1.5%;
+}
+
+.bottom-text {
+    height: 50%;
+}
+
+.deny {
+    float: right;
+    margin-right: 15px;
+}
+
+.fa-plus-square-o {
+    margin-right: 5px;
+}
+
+.resources {
+    margin-left: 8px;
+}
+
+#Summary {
+    height: 100px;
+    width: 250px;
+    margin-left: 15px;
+}
+#History {
+    width: 250px;
+    margin-left: 15px;
+}
+
+#table-head {
+    height: 30px;
+}
+
+.summary-details,
+.history-list {
+     width: 250px;
+}
+
+.fa-trash {
+    margin-left: 2px;
+}
+
+.fa-ban {
+    margin-right: 2px;
+}
