@@ -1,13 +1,94 @@
 <!doctype html>
 
 <html>
-	<head>
-		<title>Cruise</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="initial-scale=1.0">
-	</head>
 
-	<body>
+<head>
+    <title>Cruise</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Assets/css/main.css">
+</head>
 
-	</body>
+<body>
+    <header id="header">
+        <div>Signed in as <span id="user"></span></div>
+        <div><span>Sign out</span></div>
+    </header>
+    <div id="main-container">
+        <span>Cruise</span>
+        <div id="table-container">
+            <span>Agents</span>
+            <button>All</button>
+            <button>Physical</button>
+            <button>Virtual</button>
+            <div id="left-content">
+                <div class="idle">
+                    <span class="circle"></span>
+                    <div class="top-text">
+                        <span class="link">bjstdmngbgr02.thoughtworks.com</span>
+                        <span>| idle 192.168.1.2 | /var/lib/cruise-agent</span>
+                    </div>
+                    <div class="bottom-text">
+                        <span><a href="#">Specify Resources</a> | Resources: </span>
+                        <span class="resources">Ubuntu</span>
+                        <span class="resources">Firefox3</span>
+                        <span class="resources">core-duo</span>
+                        <span>Deny</span>
+                    </div>
+
+                </div>
+                <div class="building">
+                    <span class="circle"></span>
+                    <div class="top-text">
+                        <span class="link">bjstdmngbgr03.thoughtworks.com</span>
+                        <span>| idle 192.168.1.3 | /var/lib/cruise-agent</span>
+                    </div>
+                    <div class="bottom-text">
+                        <span><a href="#">Specify Resources</a> | Resources: </span>
+                        <span class="resources">Ubuntu</span>
+                        <span class="resources">Firefox3</span>
+                        <span class="resources">mysql</span>
+                        <span class="resources">core-duo</span>
+                        <span>Deny</span>
+                    </div>
+                </div>
+                <div class="building">
+                    <span class="circle"></span>
+                    <div class="top-text">
+                        <span class="link">bjstdmngbgr4.thoughtworks.com</span>
+                        <span>| idle 192.168.1.4 | /var/lib/cruise-agent</span>
+                    </div>
+                    <div class="bottom-text">
+                        <span><a href="#">Specify Resources</a> | Resources: </span>
+                        <span class="resources">Ubuntu</span>
+                        <span class="resources">Firefox3</span>
+                        <span class="resources">mysql</span>
+                        <span class="resources">core-duo</span>
+                        <span>Deny</span>
+                    </div>
+                </div>
+                <div class="idle">
+                    <span class="circle"></span>
+                    <div class="top-text">
+                        <span class="link">bjstdmngbgr02.thoughtworks.com</span>
+                        <span>| idle 192.168.1.2 | /var/lib/cruise-agent</span>
+                    </div>
+                    <div class="bottom-text">
+                        <span><a href="#">Specify Resources</a> | Resources: </span>
+                        <span class="resources">Ubuntu</span>
+                        <span>Deny</span>
+                    </div>
+                </div>
+            </div>
+            <div id="right-content">
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <script type="text/javascript" src="Assets/js/main.js"></script>
+</body>
+
 </html>
