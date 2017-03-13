@@ -9,21 +9,27 @@
     <!--CABIN GOOGLE FONT-->
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     <!--FONT AWESOME-->
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header id="header">
-        <div>Signed in as <span id="user"></span></div>
-        <div><span>Sign out</span></div>
+    <header>
+        <div>Signed in as <span id="user"></span><i class="fa fa-arrow-circle-right fa-lg"></i><span>Sign out</span></div>
     </header>
     <div id="main-container">
-        <span>Cruise</span>
+        <h1>Cruise</h1>
+        <div>
+            <div class="tablinks">DASHBOARD</div>
+            <div class="tablinks">MY CRUISE</div>
+            <div class="tablinks">AGENTS</div>
+            <div class="tablinks">HELP</div>
+            
+        </div>
         <div id="table-container">
             <span>Agents</span>
-            <button>All</button>
-            <button>Physical</button>
-            <button>Virtual</button>
+            <button class="display">All</button>
+            <button class="display">Physical</button>
+            <button class="display">Virtual</button>
             <div id="left-content">
                 <div class="idle">
                     <span class="circle"></span>
