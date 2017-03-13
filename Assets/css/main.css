@@ -27,7 +27,7 @@ a {
     margin-right: 10px;
 }
 
-h5 {  
+h5 {
     border-bottom: 1px solid gray;
 }
 
@@ -47,15 +47,15 @@ h5 {
     height: 415px;
     position: relative;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 #table-container {
     background-color: white;
     width: 870px;
-    height: 390px;    
-    position: absolute; 
-    bottom: 0; 
+    height: 390px;
+    position: absolute;
+    bottom: 0;
 }
 
 #agents {
@@ -90,12 +90,12 @@ h5 {
 
 .circle {
     float: left;
-	width: 35px;
-	height: 35px;
-	background: gray;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
+    width: 35px;
+    height: 35px;
+    background: gray;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
     margin: 10px 8px 10px 15px;
     display: block;
 }
@@ -145,6 +145,7 @@ h5 {
     width: 250px;
     margin-left: 15px;
 }
+
 #History {
     width: 250px;
     margin-left: 15px;
@@ -156,7 +157,7 @@ h5 {
 
 .summary-details,
 .history-list {
-     width: 250px;
+    width: 250px;
 }
 
 .fa-trash {
