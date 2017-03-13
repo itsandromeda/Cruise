@@ -14,21 +14,24 @@
 
 <body>
     <header>
-        <div>Signed in as <span id="user"></span><i class="fa fa-arrow-circle-right fa-lg"></i><span>Sign out</span></div>
+        <div>Signed in as <span id="user"></span><i class="fa fa-arrow-circle-right fa-lg"></i><span id="sign-out">Sign out</span></div>
     </header>
     <div id="main-container">
         <h1>Cruise</h1>
-        <div>
+        <div id="tab">
             <div class="tablinks">DASHBOARD</div>
             <div class="tablinks">MY CRUISE</div>
             <div class="tablinks">AGENTS</div>
             <div class="tablinks">HELP</div>  
         </div>
         <div id="table-container">
-            <span>Agents</span>
-            <button class="display">All</button>
-            <button class="display">Physical</button>
-            <button class="display">Virtual</button>
+             <div id="table-head">
+                <span id="agents">Agents</span>
+                <button class="display">All</button>
+                <button class="display">Physical</button>
+                <button class="display">Virtual</button>
+            </div>
+            
             <div id="left-content">
                 <div class="idle">
                     <span class="circle"></span>
@@ -38,10 +41,10 @@
                     </div>
                     <div class="bottom-text">
                         <span><i class="fa fa-plus fa-lg"></i><a href="#">Specify Resources</a> | Resources: </span>
-                        <span class="resources">ubuntu</span><i class="fa fa-window-close-o fa-lg"></i>
-                        <span class="resources">firefox3</span><i class="fa fa-window-close-o fa-lg"></i>
-                        <span class="resources">core-duo</span><i class="fa fa-window-close-o fa-lg"></i>
-                        <i class="fa fa-ban"></i><span>Deny</span>
+                        <span class="resources">ubuntu </span><i class="fa fa-window-close-o fa-lg"></i>
+                        <span class="resources">firefox3 </span><i class="fa fa-window-close-o fa-lg"></i>
+                        <span class="resources">core-duo </span><i class="fa fa-window-close-o fa-lg"></i>
+                        <i class="fa fa-ban"></i><span> Deny</span>
                     </div>
                 </div>
                 <div class="building">
@@ -66,8 +69,8 @@
                     </div>
                     <div class="bottom-text">
                         <span><i class="fa fa-plus fa-lg"></i><a href="#">Specify Resources</a> | Resources: </span>
-                        <span class="resources">Ubuntu </span><i class="fa fa-window-close-o fa-lg"></i>
-                        <span class="resources">Firefox3 </span><i class="fa fa-window-close-o fa-lg"></i>
+                        <span class="resources">ubuntu </span><i class="fa fa-window-close-o fa-lg"></i>
+                        <span class="resources">firefox3 </span><i class="fa fa-window-close-o fa-lg"></i>
                         <span class="resources">mysql</span> <i class="fa fa-window-close-o fa-lg"></i>
                         <span class="resources">core-duo </span><i class="fa fa-window-close-o fa-lg"></i>
                     </div>
@@ -80,8 +83,8 @@
                     </div>
                     <div class="bottom-text">
                         <span><i class="fa fa-plus fa-lg"></i><a href="#">Specify Resources</a> | Resources: </span>
-                        <span class="resources">Ubuntu <i class="fa fa-window-close-o fa-lg"></i></span>
-                        <i class="fa fa-ban fa-lg"></i><span>Deny</span>
+                        <span class="resources">ubuntu <i class="fa fa-window-close-o fa-lg"></i></span>
+                        <i class="fa fa-ban fa-lg"></i><span> Deny</span>
                     </div>
                 </div>
             </div>
