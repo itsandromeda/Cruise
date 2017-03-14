@@ -14,7 +14,10 @@
 
 <body>
     <header>
-        Signed in as <span id="user"></span><i class="fa fa-arrow-circle-right fa-lg"></i><span id="sign-out">Sign out</span>
+        <div id="header-text">
+            Signed in as <span id="user"></span>
+            <a href="sign-out.html" id="sign-out"><i class="fa fa-arrow-circle-right fa-lg"></i> Sign out</a>
+        </div>
     </header>
     <div id="main-container">
         <h1>Cruise</h1>
@@ -39,7 +42,7 @@
                                 <span>| idle 192.168.1.2 | /var/lib/cruise-agent</span>
                             </div>
                             <div class="bottom-text">
-                                <span><i class="fa fa-plus-square-o"></i><a href="#">Specify Resources</a> | Resources: </span>
+                                <span><i class="fa fa-plus-square-o"></i><a href="#" class="specify-resources">Specify Resources</a> | Resources: </span>
                                 <span class="resources">Ubuntu </span><i class="fa fa-trash"></i></i>
                                 <span class="resources">Firefox3 </span><i class="fa fa-trash"></i>
                                 <span class="resources">Core-Duo </span><i class="fa fa-trash"></i>
@@ -53,7 +56,7 @@
                                 <span>| building 192.168.1.3 | /var/lib/cruise-agent</span>
                             </div>
                             <div class="bottom-text">
-                                <span><i class="fa fa-plus-square-o"></i><a href="#">Specify Resources</a> | Resources: </span>
+                                <span><i class="fa fa-plus-square-o"></i><a href="#" class="specify-resources">Specify Resources</a> | Resources: </span>
                                 <span class="resources">Ubuntu </span><i class="fa fa-trash"></i>
                                 <span class="resources">Firefox3 </span><i class="fa fa-trash"></i>
                                 <span class="resources">MySQL </span><i class="fa fa-trash"></i>
@@ -67,7 +70,7 @@
                                 <span>| building 192.168.1.4 | /var/lib/cruise-agent</span>
                             </div>
                             <div class="bottom-text">
-                                <span><i class="fa fa-plus-square-o"></i><a href="#">Specify Resources</a> | Resources: </span>
+                                <span><i class="fa fa-plus-square-o"></i><a href="#" class="specify-resources">Specify Resources</a> | Resources: </span>
                                 <span class="resources">Ubuntu </span><i class="fa fa-trash"></i>
                                 <span class="resources">Firefox3 </span><i class="fa fa-trash"></i>
                                 <span class="resources">MySQL</span><i class="fa fa-trash"></i>
@@ -81,7 +84,7 @@
                                 <span>| idle 192.168.1.5 | /var/lib/cruise-agent</span>
                             </div>
                             <div class="bottom-text">
-                                <span><i class="fa fa-plus-square-o"></i><a href="#">Specify Resources</a> | Resources: </span>
+                                <span><i class="fa fa-plus-square-o"></i><a href="#" class="specify-resources">Specify Resources</a> | Resources: </span>
                                 <span class="resources">Ubuntu </span><i class="fa fa-trash"></i>
                                 <span class="deny"><i class="fa fa-ban fa-lg"></i> Deny</span>
                             </div>
