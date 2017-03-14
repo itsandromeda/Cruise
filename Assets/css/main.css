@@ -5,14 +5,44 @@ html {
 }
 
 header {
-    margin-right: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 18px;
     position: absolute;
-    right: 1%;
+    color: white;
+    height: 45px;
+    background-color: #EF5BA1;
+}
+
+#header-text {
+    text-align: right;
+    position: absolute;
+    right: 0;
+    font-size: 18px;
+}
+
+#user {
+    font-weight: 600px;
+    color: white;
+    margin-right: 10px;
+}
+
+#sign-out {
+    color: white;
+    text-decoration: none;
+    padding: 12px 10px 11px 10px;
+}
+
+#sign-out:hover {
+    color: #EF5BA1;
+    background-color: white;
 }
 
 .fa-arrow-circle-right {
-    margin-right: 5px;
-    margin-left: 12px;
+    margin-right: 3px;
+    padding-left: 2px;
+    margin-top: 14px;
 }
 
 h1 {
@@ -31,7 +61,7 @@ i {
     font-size: 12px;
 }
 
-a {
+specify-resources {
     margin-right: 10px;
     color: black;
 }
