@@ -1,0 +1,54 @@
+html {
+    background-color: #EF5BA1;
+    text-align: center;
+    margin-top: 4%;
+}
+
+a {
+    font-family: Open Sans;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    font-family: Open Sans;
+    font-size: 14px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 265px;
+    height: 40px;
+    background: transparent;
+    border-top: none;
+    outline: none;
+}
+
+#form {
+    background: white;
+    border-radius: 4px;
+    width: 290px;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5%;
+}
+
+#log-in {
+    background: black;
+    font-family: Open Sans;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 290px;
+    height: 50px;
+    margin-bottom: 10%;
+    outline: none;
+    cursor: pointer;
+}
+
+#log-in:hover {
+    background: #262626;
+    outline: none;
+}
