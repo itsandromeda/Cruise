@@ -10,6 +10,11 @@ header {
     right: 1%;
 }
 
+.fa-arrow-circle-right {
+    margin-right: 5px;
+    margin-left: 12px;
+}
+
 h1 {
     font-size: 40px;
     font-weight: 400;
@@ -23,7 +28,7 @@ span,
 p,
 td,
 i {
-    font-size: 13px;
+    font-size: 12px;
 }
 
 a {
@@ -31,130 +36,37 @@ a {
     color: black;
 }
 
-h5 {
-    font-weight: 600;
-    border-bottom: 1px solid gray;
-}
-
-.fa-arrow-circle-right {
-    margin-right: 5px;
-    margin-left: 12px;
-}
-
-.tablinks {
-    width: 100px;
-    float: right;
-}
-
 #sub-container {
-    width: 870px;
+    width: 874px;
     height: 415px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
 }
 
+.tablinks {
+    width: 100px;
+    float: right;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    border: none;
+    margin: 2px 0 2px 5px;
+    padding: 5px 0 4px 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    cursor: pointer;
+}
+
 #table-container {
     background-color: lavender;
+    border: 2px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     width: 870px;
     height: 390px;
     position: absolute;
     bottom: 0;
-}
-
-#agents {
-    float: left;
-    font-size: 20px;
-    margin-left: 15px;
-    margin-top: 3px;
-    color: white;
-}
-
-#left-content {
-    float: left;
-    bottom: 0;
-    position: absolute;
-    width: 590px;
-    height: 350px;
-    margin-top: 0px;
-    padding-top: 2px;
-}
-
-#right-content {
-    color: #333333;
-    float: right;
-    width: 280px;
-    height: 360px;
-}
-
-.circle {
-    float: left;
-    width: 35px;
-    height: 35px;
-    background-color: lavender;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    margin: 10px 8px 10px 15px;
-    display: block;
-}
-
-.link {
-    font-weight: 500;
-}
-
-.building {
-    background-color: #6a92cc;
-    border-radius: 10px;
-    width: 580px;
-    height: 55px;
-    margin: 10px 10px 10px 10px;
-}
-
-.idle {
-    background-color: #808285;
-    border-radius: 10px;
-    width: 580px;
-    height: 55px;
-    margin: 10px 10px 10px 10px;
-}
-
-.top-text {
-    color: white;
-    height: 35%;
-    padding-top: 1.5%;
-}
-
-.bottom-text {
-    height: 50%;
-    color: white;
-}
-
-.deny {
-    float: right;
-    margin-right: 15px;
-}
-
-.fa-plus-square-o {
-    margin-right: 5px;
-    color: #222323;
-}
-
-.resources {
-    margin-left: 8px;
-}
-
-#Summary {
-    height: 100px;
-    width: 250px;
-    margin-left: 15px;
-    margin-top: 5px;
-}
-
-#History {
-    width: 250px;
-    margin-left: 15px;
-    margin-top: -25px;
 }
 
 #table-head {
@@ -162,19 +74,12 @@ h5 {
     background-color: black;
 }
 
-.summary-details,
-.history-list {
-    width: 250px;
-}
-
-.fa-trash {
-    margin-left: 2px;
-    color: #222323;
-}
-
-.fa-ban {
-    margin-right: 2px;
-    color: #222323;
+#agents {
+    float: left;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 1px;
+    color: white;
 }
 
 .display {
@@ -197,14 +102,108 @@ h5 {
     background-position: -100% 100%;
 }
 
-.tablinks {
-    background-color: black;
+#left-content {
+    float: left;
+    bottom: 0;
+    position: absolute;
+    width: 590px;
+    height: 350px;
+    margin-top: 0px;
+    padding-top: 2px;
+}
+
+.idle {
+    background-color: #808285;
+    border-radius: 10px;
+    width: 580px;
+    height: 55px;
+    margin: 10px 10px 10px 10px;
+}
+
+.circle {
+    float: left;
+    width: 35px;
+    height: 35px;
+    background-color: lavender;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin: 10px 8px 10px 15px;
+    display: block;
+}
+
+.top-text {
     color: white;
-    font-weight: 400;
-    border: none;
-    margin: 2px 0 2px 5px;
-    padding: 5px 0 4px 0;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    cursor: pointer;
+    height: 35%;
+    padding-top: 1.5%;
+}
+
+.link {
+    font-weight: 500;
+}
+
+.bottom-text {
+    height: 50%;
+    color: white;
+}
+
+.fa-plus-square-o {
+    margin-right: 5px;
+    color: #222323;
+}
+
+.resources {
+    margin-left: 8px;
+}
+
+.fa-trash {
+    margin-left: 2px;
+    color: #222323;
+}
+
+.deny {
+    float: right;
+    margin-right: 15px;
+}
+
+.fa-ban {
+    margin-right: 2px;
+    color: #222323;
+}
+
+.building {
+    background-color: #6a92cc;
+    border-radius: 10px;
+    width: 580px;
+    height: 55px;
+    margin: 10px 10px 10px 10px;
+}
+
+#right-content {
+    color: #333333;
+    float: right;
+    width: 280px;
+    height: 360px;
+}
+
+#Summary {
+    height: 100px;
+    width: 250px;
+    margin-left: 15px;
+}
+
+h5 {
+    font-weight: 600;
+    border-bottom: 1px solid gray;
+}
+
+.summary-details,
+.history-list {
+    width: 250px;
+}
+
+#History {
+    width: 250px;
+    margin-left: 15px;
+    margin-top: -20px;
 }
