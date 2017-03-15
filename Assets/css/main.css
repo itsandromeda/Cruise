@@ -8,10 +8,9 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    font-size: 18px;
     position: absolute;
     color: white;
-    height: 45px;
+    height: 40px;
     background-color: #EF5BA1;
 }
 
@@ -19,7 +18,7 @@ header {
     text-align: right;
     position: absolute;
     right: 0;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 #user {
@@ -31,7 +30,9 @@ header {
 #sign-out {
     color: white;
     text-decoration: none;
-    padding: 12px 10px 11px 10px;
+    padding: 10px 10px 9px 10px;
+    margin-right: 185px;
+    border-left: 0.5px solid white;
 }
 
 #sign-out:hover {
@@ -49,9 +50,9 @@ h1 {
     font-size: 40px;
     font-weight: 400;
     color: black;
-    width: 80px;
-    padding-top: 4%;
-    padding-left: 18%;
+    width: 120px;
+    margin-top: 6%;
+    margin-left: 14%;
 }
 
 span,
@@ -68,11 +69,11 @@ specify-resources {
 
 #sub-container {
     width: 874px;
-    height: 415px;
+    height: 380px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -15px;
+    margin-top: -30px;
 }
 
 .tablinks {
@@ -82,7 +83,7 @@ specify-resources {
     color: white;
     font-weight: 400;
     border: none;
-    margin: 2px 0 2px 5px;
+    margin: 2px 1px 2px 5px;
     padding: 5px 0 4px 0;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
@@ -95,7 +96,7 @@ specify-resources {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 870px;
-    height: 390px;
+    height: 355px;
     position: absolute;
     bottom: 0;
 }
@@ -119,7 +120,7 @@ specify-resources {
     border: none;
     border-radius: 100px;
     padding: .3em 1.2em;
-    margin: 4px 5px 0 20px;
+    margin: 3px 5px 0 20px;
     background-size: 200% 100%;
     background-image: linear-gradient(to right, transparent 50%, rgba(106, 146, 204, 1) 50%);
     transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
@@ -135,10 +136,10 @@ specify-resources {
 
 #left-content {
     float: left;
-    bottom: 0;
+    top: 35px;
     position: absolute;
-    width: 590px;
-    height: 350px;
+    width: 595px;
+    height: 300px;
     margin-top: 0px;
     padding-top: 2px;
 }
@@ -148,7 +149,7 @@ specify-resources {
     border-radius: 10px;
     width: 580px;
     height: 55px;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 12px;
 }
 
 .circle {
@@ -208,20 +209,21 @@ specify-resources {
     border-radius: 10px;
     width: 580px;
     height: 55px;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 12px;
 }
 
 #right-content {
     color: #333333;
     float: right;
     width: 280px;
-    height: 360px;
+    height: 325px;
 }
 
 #Summary {
     height: 100px;
     width: 250px;
     margin-left: 15px;
+    margin-top: -5px;
 }
 
 h5 {
@@ -237,5 +239,11 @@ h5 {
 #History {
     width: 250px;
     margin-left: 15px;
-    margin-top: -20px;
+    margin-top: -25px;
+}
+
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
 }
