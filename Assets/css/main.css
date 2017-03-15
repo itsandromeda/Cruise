@@ -239,3 +239,9 @@ h5 {
     margin-left: 15px;
     margin-top: -20px;
 }
+
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}

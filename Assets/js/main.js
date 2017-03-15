@@ -17,6 +17,7 @@ function print(array) {
         text = document.createTextNode(array[i]);
         span.appendChild(text);
         remove = document.createElement("button");
+        remove.setAttribute("class", "delete-btn");
         icon = document.createElement("i");
         icon.setAttribute("class", "fa fa-trash");
         remove.appendChild(icon);
@@ -29,9 +30,9 @@ function print(array) {
 function removeItem(event) {
     "use strict";
     var element = event.target,
-        parent = (element.tagName.toLowerCase === "i") ? element.parentElement.parentElement : element.parentElement,
+        parent = (element.tagName === "I") ? element.parentElement.parentElement : element.parentElement,
         re = parent.getAttribute("data-re");
-    array.splice(parseInt((re), 10), 1);
+    array.splice(re, 1);
     print(array);
 }
 
