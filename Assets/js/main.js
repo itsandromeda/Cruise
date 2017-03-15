@@ -1,5 +1,5 @@
 /*global document, removeItem*/
-var resources = ["Ubuntu", "Firefox3", "Core-Duo"],
+var array = ["Ubuntu", "Firefox3", "Core-Duo"],
     span,
     text,
     remove,
@@ -7,9 +7,9 @@ var resources = ["Ubuntu", "Firefox3", "Core-Duo"],
 
 function print(array) {
     "use strict";
-    var resources = document.getElementById("serie"),
+    var rsrcs = document.getElementById("serie"),
         i;
-    resources.innerHTML = "";
+    rsrcs.innerHTML = "";
     for (i = 0; i < array.length; i += 1) {
         span = document.createElement("span");
         span.setAttribute("class", "resources");
@@ -21,23 +21,18 @@ function print(array) {
         icon.setAttribute("class", "fa fa-trash");
         remove.appendChild(icon);
         span.appendChild(remove);
-        resources.appendChild(span);
+        rsrcs.appendChild(span);
         remove.addEventListener("click", removeItem);
     }
 }
 
-function item(event) {
-    "use strict";
-    var re = event.target.parentElement.getAttribute("data-re");
-    resources[re] = event.target.innerText;
-}
-
 function removeItem(event) {
     "use strict";
-    event.preventDefault();
-    var re = event.target.parentElement.getAttribute("data-re");
-    resources.splice(re, 1);
-    print(resources);
+    var element = event.target,
+        parent = (element.tagName.toLowerCase === "i") ? element.parentElement.parentElement : element.parentElement,
+        re = parent.getAttribute("data-re");
+    array.splice(parseInt((re), 10), 1);
+    print(array);
 }
 
-print(resources);
+print(array);
