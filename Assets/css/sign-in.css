@@ -52,3 +52,9 @@ input {
     background: #262626;
     outline: none;
 }
+
+.error {
+    font-family: Open Sans;
+    font-size: 10px;
+    color: gray;
+}
