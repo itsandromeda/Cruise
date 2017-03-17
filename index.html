@@ -30,119 +30,136 @@
             </div>
             <div id="table-container">
                 <div id="dashboard-tab" class="tab-content">
+                   <div class="table-head">
+                        <span class="table-head-title">DASHBOARD</span>
+                    </div>
                     <p>This is the dashboard</p>
                 </div>
                 <div id="cruise-tab" class="tab-content">
+                    <div class="table-head">
+                        <span class="table-head-title">CRUISE</span>
+                    </div>
                     <p>This is the cruise</p>
                 </div>
                 <div id="agents-tab" class="tab-content">
-                    <div id="table-head">
-                        <span id="agents">AGENTS</span>
-                        <button class="display">All</button>
-                        <button class="display">Physical</button>
-                        <button class="display">Virtual</button>
+                    <div class="table-head">
+                        <span class="table-head-title">AGENTS</span>
+                        <button class="agent-tabs" id="all">All</button>
+                        <button class="agent-tabs" id="physical">Physical</button>
+                        <button class="agent-tabs" id="virtual">Virtual</button>
                     </div>
-                    <div id="left-content">
-                        <div class="idle">
-                            <span class="circle"></span>
-                            <div class="top-text">
-                                <span class="link">bjstdmngbgr02.thoughtworks.com</span>
-                                <span>| idle 192.168.1.2 | /var/lib/cruise-agent</span>
-                            </div>
-                            <div class="bottom-text">
-                                <span><a href="#" name="tt-1" class="tooltip"><i class="fa fa-plus-square-o"></i>Specify Resources</a> | Resources:</span>
-                                <div id="tt-1" class="tt-box">
-                                    <span class="tt-text">Separate multiple resource names with commas.</span>
-                                    <input type="text" class="tt-text" placeholder="Resources">
-                                    <button type="button" name="button" class="tt-add">Add resources</button>
-                                    <button id="btn-close" type="button" name="tt-1" class="tt-close">Close</button>
+                    <div id="all-content" class="agent-content">
+                        <div id="left-content">
+                            <div class="idle">
+                                <span class="circle"></span>
+                                <div class="top-text">
+                                    <span class="link">bjstdmngbgr02.thoughtworks.com</span>
+                                    <span>| idle 192.168.1.2 | /var/lib/cruise-agent</span>
                                 </div>
-                                <span id="serie1"></span>
-                                <span class="deny"><i class="fa fa-ban fa-lg"></i> Deny</span>
-                            </div>
-                        </div>
-                        <div class="building">
-                            <span class="circle"></span>
-                            <div class="top-text">
-                                <span class="link">bjstdmngbgr03.thoughtworks.com</span>
-                                <span>| building 192.168.1.3 | /var/lib/cruise-agent</span>
-                            </div>
-                            <div class="bottom-text">
-                                <span><a href="#" name="tt-2" class="tooltip"><i class="fa fa-plus-square-o"></i>Specify Resources</a> | Resources:</span>
-                                <div id="tt-2" class="tt-box">
-                                    <span class="tt-text">Separate multiple resource names with commas.</span>
-                                    <input type="text" class="tt-text" placeholder="Resources">
-                                    <button type="button" name="button" class="tt-add">Add resources</button>
-                                    <button id="btn-close" type="button" name="tt-2" class="tt-close">Close</button>
+                                <div class="bottom-text">
+                                    <span class="rsrcs"><a href="#" name="tt-1" class="tooltip"><i class="fa fa-plus-square-o"></i>Specify Resources</a> | Resources:</span>
+                                    <div id="tt-1" class="tt-box">
+                                        <span class="tt-text">Separate multiple resource names with commas.</span>
+                                        <input type="text" class="tt-text" placeholder="Resources">
+                                        <button type="button" name="button" class="tt-add">Add resources</button>
+                                        <button id="btn-close" type="button" name="tt-1" class="tt-close">Close</button>
+                                    </div>
+                                    <span id="serie1"></span>
+                                    <span class="deny"><i class="fa fa-ban fa-lg"></i> Deny</span>
                                 </div>
-                                <span id="serie2"></span>
                             </div>
-                        </div>
-                        <div class="building">
-                            <span class="circle"></span>
-                            <div class="top-text">
-                                <span class="link">bjstdmngbgr04.thoughtworks.com</span>
-                                <span>| building 192.168.1.4 | /var/lib/cruise-agent</span>
-                            </div>
-                            <div class="bottom-text">
-                                <span><a href="#" name="tt-3" class="tooltip"><i class="fa fa-plus-square-o"></i>Specify Resources</a> | Resources:</span>
-                                <div id="tt-3" class="tt-box">
-                                    <span class="tt-text">Separate multiple resource names with commas.</span>
-                                    <input type="text" class="tt-text" placeholder="Resources">
-                                    <button type="button" name="button" class="tt-add">Add resources</button>
-                                    <button id="btn-close" type="button" name="tt-3" class="tt-close">Close</button>
+                            <div class="building">
+                                <span class="circle"></span>
+                                <div class="top-text">
+                                    <span class="link">bjstdmngbgr03.thoughtworks.com</span>
+                                    <span>| building 192.168.1.3 | /var/lib/cruise-agent</span>
                                 </div>
-                                <span id="serie3"></span>
-                            </div>
-                        </div>
-                        <div class="idle">
-                            <span class="circle"></span>
-                            <div class="top-text">
-                                <span class="link">bjstdmngbgr05.thoughtworks.com</span>
-                                <span>| idle 192.168.1.5 | /var/lib/cruise-agent</span>
-                            </div>
-                            <div class="bottom-text">
-                                <span><a href="#" name="tt-4" class="tooltip"><i class="fa fa-plus-square-o"></i>Specify Resources</a> | Resources:</span>
-                                <div id="tt-4" class="tt-box">
-                                    <span class="tt-text">Separate multiple resource names with commas.</span>
-                                    <input type="text" class="tt-text" placeholder="Resources">
-                                    <button type="button" name="button" class="tt-add">Add resources</button>
-                                    <button id="btn-close" type="button" name="tt-4" class="tt-close">Close</button>
-                                    </span>
+                                <div class="bottom-text">
+                                    <span class="rsrcs"><a href="#" name="tt-2" class="tooltip"><i class="fa fa-plus-square-o"></i>Specify Resources</a> | Resources:</span>
+                                    <div id="tt-2" class="tt-box">
+                                        <span class="tt-text">Separate multiple resource names with commas.</span>
+                                        <input type="text" class="tt-text" placeholder="Resources">
+                                        <button type="button" name="button" class="tt-add">Add resources</button>
+                                        <button id="btn-close" type="button" name="tt-2" class="tt-close">Close</button>
+                                    </div>
+                                    <span id="serie2"></span>
                                 </div>
-                                <span id="serie4"></span>
-                                <span class="deny"><i class="fa fa-ban fa-lg"></i> Deny</span>
+                            </div>
+                            <div class="building">
+                                <span class="circle"></span>
+                                <div class="top-text">
+                                    <span class="link">bjstdmngbgr04.thoughtworks.com</span>
+                                    <span>| building 192.168.1.4 | /var/lib/cruise-agent</span>
+                                </div>
+                                <div class="bottom-text">
+                                    <span class="rsrcs"><a href="#" name="tt-3" class="tooltip"><i class="fa fa-plus-square-o"></i>Specify Resources</a> | Resources:</span>
+                                    <div id="tt-3" class="tt-box">
+                                        <span class="tt-text">Separate multiple resource names with commas.</span>
+                                        <input type="text" class="tt-text" placeholder="Resources">
+                                        <button type="button" name="button" class="tt-add">Add resources</button>
+                                        <button id="btn-close" type="button" name="tt-3" class="tt-close">Close</button>
+                                    </div>
+                                    <span id="serie3"></span>
+                                </div>
+                            </div>
+                            <div class="idle">
+                                <span class="circle"></span>
+                                <div class="top-text">
+                                    <span class="link">bjstdmngbgr05.thoughtworks.com</span>
+                                    <span>| idle 192.168.1.5 | /var/lib/cruise-agent</span>
+                                </div>
+                                <div class="bottom-text">
+                                    <span class="rsrcs"><a href="#" name="tt-4" class="tooltip"><i class="fa fa-plus-square-o"></i>Specify Resources</a> | Resources:</span>
+                                    <div id="tt-4" class="tt-box">
+                                        <span class="tt-text">Separate multiple resource names with commas.</span>
+                                        <input type="text" class="tt-text" placeholder="Resources">
+                                        <button type="button" name="button" class="tt-add">Add resources</button>
+                                        <button id="btn-close" type="button" name="tt-4" class="tt-close">Close</button>
+                                        </span>
+                                    </div>
+                                    <span id="serie4"></span>
+                                    <span class="deny"><i class="fa fa-ban fa-lg"></i> Deny</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="right-content">
-                        <div id="Summary">
-                            <h5>Summary</h5>
-                            <table class="summary-details">
-                                <tr>
-                                    <td>building</td>
-                                    <td id="buildingContent"></td>
-                                </tr>
-                                <tr>
-                                    <td>idle</td>
-                                    <td id="idleContent"></td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div id="History">
-                            <h5>History</h5>
-                            <div class="history-list">
-                                <p>bjstdmngbgr02/Acceptance_test</p>
-                                <p>bjstdmngbgr02/Acceptance_test</p>
-                                <p>bjstdmngbgr02/Acceptance_test</p>
-                                <p>bjstdmngbgr02/Acceptance_test</p>
-                                <p>bjstdmngbgr02/Acceptance_test</p>
+                        <div id="right-content">
+                            <div id="Summary">
+                                <h5>Summary</h5>
+                                <table class="summary-details">
+                                    <tr>
+                                        <td>building</td>
+                                        <td id="buildingContent"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>idle</td>
+                                        <td id="idleContent"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="History">
+                                <h5>History</h5>
+                                <div class="history-list">
+                                    <p>bjstdmngbgr02/Acceptance_test</p>
+                                    <p>bjstdmngbgr02/Acceptance_test</p>
+                                    <p>bjstdmngbgr02/Acceptance_test</p>
+                                    <p>bjstdmngbgr02/Acceptance_test</p>
+                                    <p>bjstdmngbgr02/Acceptance_test</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="help-tab" class="tab-content">
+                    <div class="table-head">
+                        <span class="table-head-title">HELP</span>
+                    </div>
                     <p>Looking for help?</p>
+                </div>
+                <div id="physical-content" class="agent-content">
+                    <p>Physical content</p>
+                </div>
+                <div id="virtual-content" class="agent-content">
+                    <p>Virtual content</p>
                 </div>
             </div>
         </div>
