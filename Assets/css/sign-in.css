@@ -11,6 +11,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    outline: none;
+}
+
 input {
     border: none;
     font-family: Open Sans;
@@ -34,7 +38,7 @@ input {
     margin-bottom: 0.5%;
 }
 
-#log-in {
+#sign-in {
     background: black;
     font-family: Open Sans;
     font-size: 15px;
@@ -44,13 +48,11 @@ input {
     width: 290px;
     height: 50px;
     margin-bottom: 10%;
-    outline: none;
     cursor: pointer;
 }
 
-#log-in:hover {
+#sign-in:hover {
     background: #262626;
-    outline: none;
 }
 
 .error {

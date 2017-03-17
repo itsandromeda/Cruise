@@ -2,7 +2,7 @@
 /*jslint eqeq: true*/
 window.addEventListener('load', function () {
     "use strict";
-    var logIn = document.getElementById('log-in');
+    var logIn = document.getElementById('sign-in');
 
     logIn.addEventListener('click', function () {
         var username = document.getElementById('username').value,

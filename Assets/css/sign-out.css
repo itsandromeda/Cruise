@@ -14,6 +14,10 @@ header {
     background-color: #EF5BA1;
 }
 
+input {
+    outline: none;
+}
+
 #header-text {
     text-align: right;
     position: absolute;
@@ -25,7 +29,7 @@ header {
     color: white;
     text-decoration: none;
     padding: 10px 10px 9px 10px;
-    margin-right: 185px;
+    margin-right: 240px;
     border-left: 0.5px solid white;
 }
 
@@ -65,7 +69,7 @@ footer {
     width: 75%;
     height: 65%;
     margin-left: auto;
-    margin-right: auto;  
+    margin-right: auto;
 }
 
 .footer-title {
@@ -82,21 +86,21 @@ footer {
 }
 
 #right-content {
-    width: 45%;
+    width: 38%;
     float: right;
 }
 
 #bottom-text {
     bottom: 0;
     position: absolute;
-    width: 70%;
+    width: 68%;
     height: 35%;
     margin-left: 15%;
     margin-right: 15%;
-    border-top: 0.5px solid #737578;  
+    border-top: 0.5px solid #737578;
 }
 
-#info {    
+#info {
     margin-top: 20px;
 }
 
@@ -117,10 +121,16 @@ footer {
 }
 
 #social-media {
-    height: 50px;    
+    height: 50px;
     font-size: 2em;
 }
-.fa {
+
+.fa-twitter,
+.fa-facebook,
+.fa-youtube,
+.fa-linkedin,
+.fa-weibo,
+.fa-instagram {
     margin-right: 20px;
     color: white;
 }
