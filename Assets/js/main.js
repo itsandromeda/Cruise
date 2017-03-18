@@ -17,12 +17,12 @@ function display(tab) {
     for (i = 0; i < tabContent.length; i += 1) {
         tabContent[i].style.display = "none";
     }
-    
+
     agentContent = document.getElementsByClassName("agent-content");
     for (i = 0; i < agentContent.length; i += 1) {
         agentContent[i].style.display = "none";
     }
-    document.getElementById("all").click();
+    document.getElementById("physical").click();
     document.getElementById(tab).style.display = "block";
 }
 

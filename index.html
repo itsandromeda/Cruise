@@ -13,12 +13,14 @@
 </head>
 
 <body>
+    <!-- NAVIGATION BAR -->
     <header>
         <div id="header-text">
             SIGNED IN AS <span id="user"></span>
             <a href="sign-out.html" id="sign-out"><i class="fa fa-arrow-circle-right"></i> SIGN OUT</a>
         </div>
     </header>
+    <!-- TABLE -->
     <div id="main-container">
         <h1>CRUISE</h1>
         <div id="sub-container">
@@ -29,6 +31,7 @@
                 <button class="tablinks" id="dashboard">DASHBOARD</button>
             </div>
             <div id="table-container">
+                <!-- DASHBOARD TAB -->
                 <div id="dashboard-tab" class="tab-content">
                     <div class="table-head">
                         <span class="table-head-title">DASHBOARD</span>
@@ -37,6 +40,7 @@
                         <p>This is the dashboard</p>
                     </div>
                 </div>
+                <!-- MY CRUISE TAB -->
                 <div id="cruise-tab" class="tab-content">
                     <div class="table-head">
                         <span class="table-head-title">CRUISE</span>
@@ -45,6 +49,7 @@
                         <p>This is the cruise</p>
                     </div>
                 </div>
+                <!-- DEFAULT | AGENTS TAB -->
                 <div id="agents-tab" class="tab-content">
                     <div class="table-head">
                         <span class="table-head-title">AGENTS</span>
@@ -52,7 +57,9 @@
                         <button class="agent-tabs" id="physical">Physical</button>
                         <button class="agent-tabs" id="virtual">Virtual</button>
                     </div>
-                    <div id="all-content" class="agent-content">
+                    <!-- PHYSICAL CONTENT -->
+                    <div id="physical-content" class="agent-content">
+                        <!-- PHYSICAL left content -->
                         <div id="left-content">
                             <div class="idle">
                                 <span class="circle"></span>
@@ -126,6 +133,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- PHYSICAL right content -->
                         <div id="right-content">
                             <div id="Summary">
                                 <h5>Summary</h5>
@@ -153,6 +161,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- HELP TAB -->
                 <div id="help-tab" class="tab-content">
                     <div class="table-head">
                         <span class="table-head-title">HELP</span>
@@ -181,15 +190,18 @@
                         </div>
                     </div>
                 </div>
-                <div id="physical-content" class="agent-content tab-text">
-                    <p>Physical content</p>
+                <!-- ALL CONTENT -->
+                <div id="all-content" class="agent-content tab-text">
+                    <p>All content</p>
                 </div>
+                <!-- VIRTUAL CONTENT -->
                 <div id="virtual-content" class="agent-content tab-text">
                     <p>Virtual content</p>
                 </div>
             </div>
         </div>
     </div>
+    <!-- FOOTER -->
     <footer>Reto de <a class="footer-links" href="http://www.laboratoria.la" target="_blank">Laboratoria</a> - <a class="footer-links" href="https://github.com/itsandromeda" target="_blank">Annia J. Flores</a> | <a class="footer-links" href="https://github.com/EmmAlva" target="_blank">Emma Tapia</a> 2017.</footer>
     <script type="text/javascript" src="Assets/js/main.js"></script>
     <script type="text/javascript" src="Assets/js/sign-in.js"></script>
