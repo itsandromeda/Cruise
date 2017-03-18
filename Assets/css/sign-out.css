@@ -10,27 +10,40 @@ header {
     right: 0;
     position: absolute;
     color: white;
-    height: 40px;
+    height: 32px;
     background-color: #EF5BA1;
+}
+
+#header-text {
+    height: auto;
+    min-height: 100%;
+    font-size: 13px;
+    text-align: right;
+    right: 0;
 }
 
 input {
     outline: none;
 }
 
-#header-text {
-    text-align: right;
-    position: absolute;
-    right: 0;
-    font-size: 15px;
+.fa-search {
+    margin-right: 15px;
+}
+
+#search-tw {
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.5px solid white;
+    color: white;
 }
 
 #sign-in {
     color: white;
     text-decoration: none;
-    padding: 10px 10px 9px 10px;
-    margin-right: 240px;
+    padding: 7px 10px 7px 10px;
+    margin-right: 195px;
     border-left: 0.5px solid white;
+    border-right: 0.5px solid white;
 }
 
 #sign-in:hover {
@@ -41,62 +54,91 @@ input {
 .fa-sign-in {
     margin-right: 3px;
     padding-left: 2px;
-    margin-top: 14px;
+    margin-top: 10px;
 }
 
-#search-tw {
-    background-color: transparent;
-    border: none;
-    border-bottom: 0.5px solid white;
-    color: white;
+body {
+    margin: 0px;
+    padding: 0px;
 }
 
-.fa-search {
-    margin-right: 15px;
+#body-text {
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 800px;
+    font-size: 25px;
+    color: #333333;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.links {
+    color: #333333;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+.links:hover {
+    color: #EF5BA1;
 }
 
 footer {
     bottom: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
+    width: 100%;
     background-color: #808285;
     color: white;
-    height: 340px;
+    height: 300px;
 }
 
 #sub-container {
-    width: 75%;
+    width: 800px;
     height: 65%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.footer-title {
-    font-size: 35px;
-    margin-bottom: 15px;
-    margin-top: 25px;
-}
-
 #left-content {
-    margin: 0 20px 20px 40px;
-    width: 45%;
+    margin: 0 0 0 0;
+    width: 390px;
     float: left;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 #right-content {
-    width: 38%;
+    width: 350px;
     float: right;
 }
 
+.footer-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+#social-media {
+    height: 50px;
+    font-size: 2em;
+}
+
+.fa-twitter,
+.fa-facebook,
+.fa-youtube,
+.fa-linkedin,
+.fa-weibo,
+.fa-instagram {
+    margin-right: 20px;
+    color: white;
+}
+
 #bottom-text {
-    bottom: 0;
-    position: absolute;
-    width: 68%;
-    height: 35%;
-    margin-left: 15%;
-    margin-right: 15%;
+    font-size: 14px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
     border-top: 0.5px solid #737578;
 }
 
@@ -118,28 +160,4 @@ footer {
 
 .bottom-info {
     margin-top: 15px;
-}
-
-#social-media {
-    height: 50px;
-    font-size: 2em;
-}
-
-.fa-twitter,
-.fa-facebook,
-.fa-youtube,
-.fa-linkedin,
-.fa-weibo,
-.fa-instagram {
-    margin-right: 20px;
-    color: white;
-}
-
-#body-text {
-    margin-top: 7%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    font-size: 30px;
-    color: #333333;
 }

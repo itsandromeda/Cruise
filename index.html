@@ -20,7 +20,7 @@
         </div>
     </header>
     <div id="main-container">
-        <h1>Cruise</h1>
+        <h1>CRUISE</h1>
         <div id="sub-container">
             <div class="tab">
                 <button class="tablinks" id="help">HELP</button>
@@ -30,16 +30,20 @@
             </div>
             <div id="table-container">
                 <div id="dashboard-tab" class="tab-content">
-                   <div class="table-head">
+                    <div class="table-head">
                         <span class="table-head-title">DASHBOARD</span>
                     </div>
-                    <p>This is the dashboard</p>
+                    <div class="tab-text">
+                        <p>This is the dashboard</p>
+                    </div>
                 </div>
                 <div id="cruise-tab" class="tab-content">
                     <div class="table-head">
                         <span class="table-head-title">CRUISE</span>
                     </div>
-                    <p>This is the cruise</p>
+                    <div class="tab-text">
+                        <p>This is the cruise</p>
+                    </div>
                 </div>
                 <div id="agents-tab" class="tab-content">
                     <div class="table-head">
@@ -153,17 +157,40 @@
                     <div class="table-head">
                         <span class="table-head-title">HELP</span>
                     </div>
-                    <p>Looking for help?</p>
+                    <div class="tab-text">
+                        <div id="help-left">
+                            <form>
+                                <label for="name" class="help-form">Name <span class="req">*</span></label>
+                                <br>
+                                <input class="help-input" name="name" pattern="[^0-9]*" placeholder="Name" type="text" required>
+                                <br>
+                                <label for="email" class="help-form">Email <span class="req">*</span></label>
+                                <br>
+                                <input class="help-input" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Email" type="email" required>
+                                <br>
+                                <label class="help-form">Where did you hear about us?</label>
+                                <br>
+                                <textarea class="help-textarea"></textarea>
+                                <p class="req-fields"><span class="req">* </span>Required fields</p>
+                                <button id="form-btn" type="submit">Send us a message</button>
+                            </form>
+                        </div>
+                        <div id="help-right">
+                            <p class="tab-title">CAN WE HELP YOUR COMPANY STAND OUT FROM THE CROWD?</p>
+                            <p class="help-content">We'd love to help and to work with you. Please give us a few details and we'll get back to you soon.</p>
+                        </div>
+                    </div>
                 </div>
-                <div id="physical-content" class="agent-content">
+                <div id="physical-content" class="agent-content tab-text">
                     <p>Physical content</p>
                 </div>
-                <div id="virtual-content" class="agent-content">
+                <div id="virtual-content" class="agent-content tab-text">
                     <p>Virtual content</p>
                 </div>
             </div>
         </div>
     </div>
+    <footer>Reto de <a class="footer-links" href="http://www.laboratoria.la" target="_blank">Laboratoria</a> - <a class="footer-links" href="https://github.com/itsandromeda" target="_blank">Annia J. Flores</a> | <a class="footer-links" href="https://github.com/EmmAlva" target="_blank">Emma Tapia</a> 2017.</footer>
     <script type="text/javascript" src="Assets/js/main.js"></script>
     <script type="text/javascript" src="Assets/js/sign-in.js"></script>
 </body>

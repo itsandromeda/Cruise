@@ -4,6 +4,15 @@ html {
     height: 100%;
 }
 
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    outline: none;
+}
+
 
 /*NAVIGATION BAR*/
 
@@ -13,19 +22,15 @@ header {
     right: 0;
     position: absolute;
     color: white;
-    height: 40px;
+    height: 32px;
     background-color: #EF5BA1;
-}
-
-button {
-    outline: none;
 }
 
 #header-text {
     text-align: right;
-    position: absolute;
+    height: 100%;
     right: 0;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 #user {
@@ -37,9 +42,10 @@ button {
 #sign-out {
     color: white;
     text-decoration: none;
-    padding: 10px 10px 9px 10px;
-    margin-right: 240px;
+    padding: 7px 10px 7px 10px;
+    margin-right: 190px;
     border-left: 0.5px solid white;
+    border-right: 0.5px solid white;
 }
 
 #sign-out:hover {
@@ -50,7 +56,31 @@ button {
 .fa-arrow-circle-right {
     margin-right: 3px;
     padding-left: 2px;
-    margin-top: 14px;
+    margin-top: 10px;
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 4px;
+    bottom: 0;
+    background-color: #808285;
+    color: white;
+    height: 22px;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links:hover {
+    text-decoration: underline;
+    color: #EF5BA1;
+}
+
+#main-container {
+    margin-bottom: 80px;
 }
 
 
@@ -58,11 +88,13 @@ button {
 
 h1 {
     font-size: 40px;
-    font-weight: 400;
-    color: black;
-    width: 120px;
+    font-weight: 900;
+    color: #333333;
+    width: 860px;
     margin-top: 6%;
-    margin-left: 18%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid #EEEEEE;
 }
 
 
@@ -75,10 +107,10 @@ h1 {
     color: white;
     font-weight: 400;
     border: none;
-    margin: 2px 1px 2px 5px;
-    padding: 5px 0 4px 0;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+    margin: 2px 4px 0 5px;
+    padding: 5px 0 4px 0;
     cursor: pointer;
 }
 
@@ -117,8 +149,8 @@ h1 {
     background-color: white;
     border: none;
     border-radius: 100px;
-    padding: .3em 1.2em;
-    margin: 3px 5px 0 20px;
+    padding: 2.5px 10px;
+    margin: 5px -10px 0 20px;
     background-size: 200% 100%;
     background-image: linear-gradient(to right, transparent 50%, rgba(106, 146, 204, 1) 50%);
     transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
@@ -129,6 +161,85 @@ h1 {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(106, 146, 204, 1);
     background-position: -100% 100%;
+}
+
+
+/*TAB CONTENT*/
+
+#help-left {
+    float: left;
+    top: 30px;
+    position: absolute;
+    width: 450px;
+    height: 300px;
+    margin-top: 0px;
+    padding-top: 6px;
+}
+
+.tab-text {
+    width: 835px;
+    height: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.help-form {
+    font-size: 14px;
+    color: #333333;
+}
+
+.req-fields {
+    font-size: 10px;
+}
+
+.req {
+    color: #EE0B77;
+}
+
+.help-input {
+    background-color: white;
+    color: #666666;
+    width: 380px;
+    border-bottom: 1px solid #D7D7D7;
+    padding: 5px 5px 5px 5px;
+}
+
+.help-textarea {
+    padding: 5px 5px 5px 5px;
+    width: 380px;
+    height: 70px;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+#form-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border: none;
+}
+
+#help-right {
+    float: right;
+    margin-left: -50px;
+    width: 350px;
+    height: 300px;
+    left: 0;
+}
+
+.tab-title {
+    color: #333333;
+    font-weight: 800;
+    font-size: 14px;
+    font-style: italic;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #B3B3B3;
+}
+
+.help-content {
+    color: #777777;
+    font-size: 12px;
 }
 
 
@@ -148,20 +259,23 @@ specify-resources {
 
 #sub-container {
     width: 874px;
-    height: 380px;
+    height: 375px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -30px;
+    margin-top: 40px;
 }
 
 #table-container {
     background-color: lavender;
-    border: 2px solid black;
+    -moz-box-shadow: -10px 10px 15px 0 #ccc;
+    -webkit-box-shadow: -10px 10px 15px 0 #ccc;
+    box-shadow: -10px 10px 15px 0 #ccc;
+    border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 870px;
-    height: 355px;
+    height: 350px;
     position: absolute;
     bottom: 0;
 }
@@ -169,6 +283,7 @@ specify-resources {
 .table-head {
     height: 30px;
     background-color: black;
+    border-top-left-radius: 10px;
 }
 
 .table-head-title {
@@ -212,7 +327,7 @@ specify-resources {
 .top-text {
     color: white;
     height: 35%;
-    padding-top: 1.5%;
+    padding-top: 5px;
 }
 
 .link {
@@ -283,6 +398,7 @@ h5 {
 
 .summary-details,
 .history-list {
+    margin-top: -10px;
     width: 250px;
 }
 
@@ -306,8 +422,9 @@ h5 {
     background-color: #EF5BA1;
     color: #333333;
     width: 230px;
-    box-shadow: 0 8px 6px -6px black;
+    box-shadow: -4px 4px 8px 0 black;
     border-radius: 5px;
+    -webkit-animation: fadeEffect 0.5s;
     position: absolute;
     z-index: 1;
     left: 12%;
@@ -318,6 +435,7 @@ h5 {
 
 .tt-box:after {
     background-color: #EF5BA1;
+    -webkit-animation: fadeEffect 0.5s;
     position: absolute;
     transform: rotate(45deg);
     margin-top: -88px;
