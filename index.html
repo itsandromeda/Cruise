@@ -16,7 +16,7 @@
     <!-- NAVIGATION BAR -->
     <header>
         <div id="header-text">
-            SIGNED IN AS <span id="user"></span>
+            SIGNED IN AS <span id="member">MEMBER</span>
             <a href="sign-out.html" id="sign-out"><i class="fa fa-arrow-circle-right"></i> SIGN OUT</a>
         </div>
     </header>
@@ -24,7 +24,7 @@
     <div id="main-container">
         <h1>CRUISE</h1>
         <div id="sub-container">
-            <div class="tab">
+            <div id="tab-buttons" class="tab">
                 <button class="tablinks" id="help">HELP</button>
                 <button class="tablinks" id="default">AGENTS</button>
                 <button class="tablinks" id="cruise">MY CRUISE</button>
@@ -57,6 +57,10 @@
                         <button class="agent-tabs" id="physical">Physical</button>
                         <button class="agent-tabs" id="virtual">Virtual</button>
                     </div>
+                    <!-- ALL CONTENT -->
+                    <div id="all-content" class="agent-content tab-text">
+                        <p>All content</p>
+                    </div>
                     <!-- PHYSICAL CONTENT -->
                     <div id="physical-content" class="agent-content">
                         <!-- PHYSICAL left content -->
@@ -64,71 +68,71 @@
                             <div class="idle">
                                 <span class="circle"></span>
                                 <div class="top-text">
-                                    <span class="link">bjstdmngbgr02.thoughtworks.com</span>
-                                    <span>| idle 192.168.1.2 | /var/lib/cruise-agent</span>
+                                    <span id= "link0" class="link"></span>
+                                    <span id="details0"></span>
                                 </div>
                                 <div class="bottom-text">
-                                    <span class="rsrcs"><a href="#" name="tt-1" class="tooltip"><i class="fa fa-plus-square-o"></i>Specify Resources</a> | Resources:</span>
-                                    <div id="tt-1" class="tt-box">
+                                    <span class="rsrcs"><a href="#" name="tt-0" class="tooltip"><i class="fa fa-plus-square-o"></i>Specify Resources</a> | Resources:</span>
+                                    <div id="tt-0" class="tt-box">
                                         <span class="tt-text">Separate multiple resource names with commas.</span>
-                                        <input type="text" class="tt-text" placeholder="Resources">
-                                        <button type="button" name="button" class="tt-add">Add resources</button>
-                                        <button id="btn-close" type="button" name="tt-1" class="tt-close">Close</button>
+                                        <input id="t-0" type="text" class="tt-text" placeholder="Resources">
+                                        <button id="add-00" type="button" name="tt-0" class="tt-add" data-add="0">Add resources</button>
+                                        <button type="button" name="tt-0" class="tt-close">Close</button>
                                     </div>
-                                    <span id="serie1"></span>
+                                    <span id="data-re0"></span>
                                     <span class="deny"><i class="fa fa-ban fa-lg"></i> Deny</span>
                                 </div>
                             </div>
                             <div class="building">
                                 <span class="circle"></span>
                                 <div class="top-text">
-                                    <span class="link">bjstdmngbgr03.thoughtworks.com</span>
-                                    <span>| building 192.168.1.3 | /var/lib/cruise-agent</span>
+                                    <span id= "link1" class="link"></span>
+                                    <span id="details1"></span>
                                 </div>
                                 <div class="bottom-text">
-                                    <span class="rsrcs"><a href="#" name="tt-2" class="tooltip"><i class="fa fa-plus-square-o"></i>Specify Resources</a> | Resources:</span>
-                                    <div id="tt-2" class="tt-box">
+                                    <span class="rsrcs"><a href="#" name="tt-1" class="tooltip"><i class="fa fa-plus-square-o"></i>Specify Resources</a> | Resources:</span>
+                                    <div id="tt-1" class="tt-box">
                                         <span class="tt-text">Separate multiple resource names with commas.</span>
-                                        <input type="text" class="tt-text" placeholder="Resources">
-                                        <button type="button" name="button" class="tt-add">Add resources</button>
-                                        <button id="btn-close" type="button" name="tt-2" class="tt-close">Close</button>
+                                        <input id="t-1" type="text" class="tt-text" placeholder="Resources">
+                                        <button id="add-01" type="button" name="button" class="tt-add" data-add="1">Add resources</button>
+                                        <button type="button" name="tt-1" class="tt-close">Close</button>
                                     </div>
-                                    <span id="serie2"></span>
+                                    <span id="data-re1"><span id="resources1"></span></span>
                                 </div>
                             </div>
                             <div class="building">
                                 <span class="circle"></span>
                                 <div class="top-text">
-                                    <span class="link">bjstdmngbgr04.thoughtworks.com</span>
-                                    <span>| building 192.168.1.4 | /var/lib/cruise-agent</span>
+                                    <span id= "link2" class="link"></span>
+                                    <span id="details2"></span>
                                 </div>
                                 <div class="bottom-text">
-                                    <span class="rsrcs"><a href="#" name="tt-3" class="tooltip"><i class="fa fa-plus-square-o"></i>Specify Resources</a> | Resources:</span>
-                                    <div id="tt-3" class="tt-box">
+                                    <span class="rsrcs"><a href="#" name="tt-2" class="tooltip"><i class="fa fa-plus-square-o"></i>Specify Resources</a> | Resources:</span>
+                                    <div id="tt-2" class="tt-box">
                                         <span class="tt-text">Separate multiple resource names with commas.</span>
-                                        <input type="text" class="tt-text" placeholder="Resources">
-                                        <button type="button" name="button" class="tt-add">Add resources</button>
-                                        <button id="btn-close" type="button" name="tt-3" class="tt-close">Close</button>
+                                        <input id="t-2" type="text" class="tt-text" placeholder="Resources">
+                                        <button id="add-02" type="button" name="button" class="tt-add" data-add="2">Add resources</button>
+                                        <button type="button" name="tt-2" class="tt-close">Close</button>
                                     </div>
-                                    <span id="serie3"></span>
+                                    <span id="data-re2"><span id="resources2"></span></span>
                                 </div>
                             </div>
                             <div class="idle">
                                 <span class="circle"></span>
                                 <div class="top-text">
-                                    <span class="link">bjstdmngbgr05.thoughtworks.com</span>
-                                    <span>| idle 192.168.1.5 | /var/lib/cruise-agent</span>
+                                    <span id= "link3" class="link"></span>
+                                    <span id="details3"></span>
                                 </div>
                                 <div class="bottom-text">
-                                    <span class="rsrcs"><a href="#" name="tt-4" class="tooltip"><i class="fa fa-plus-square-o"></i>Specify Resources</a> | Resources:</span>
-                                    <div id="tt-4" class="tt-box">
+                                    <span class="rsrcs"><a href="#" name="tt-3" class="tooltip"><i class="fa fa-plus-square-o"></i>Specify Resources</a> | Resources:</span>
+                                    <div id="tt-3" class="tt-box">
                                         <span class="tt-text">Separate multiple resource names with commas.</span>
-                                        <input type="text" class="tt-text" placeholder="Resources">
-                                        <button type="button" name="button" class="tt-add">Add resources</button>
-                                        <button id="btn-close" type="button" name="tt-4" class="tt-close">Close</button>
+                                        <input id="t-3" type="text" class="tt-text" placeholder="Resources">
+                                        <button id="add-03" type="button" name="button" class="tt-add" data-add="3">Add resources</button>
+                                        <button type="button" name="tt-3" class="tt-close">Close</button>
                                         </span>
                                     </div>
-                                    <span id="serie4"></span>
+                                    <span id="data-re3"><span id="resources3"></span></span>
                                     <span class="deny"><i class="fa fa-ban fa-lg"></i> Deny</span>
                                 </div>
                             </div>
@@ -156,9 +160,18 @@
                                     <p>bjstdmngbgr02/Acceptance_test</p>
                                     <p>bjstdmngbgr02/Acceptance_test</p>
                                     <p>bjstdmngbgr02/Acceptance_test</p>
+                                    <p>bjstdmngbgr02/Acceptance_test</p>
+                                    <p>bjstdmngbgr02/Acceptance_test</p>
+                                    <p>bjstdmngbgr02/Acceptance_test</p>
+                                    <p>bjstdmngbgr02/Acceptance_test</p>
+                                    <p>bjstdmngbgr02/Acceptance_test</p>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <!-- VIRTUAL CONTENT -->
+                    <div id="virtual-content" class="agent-content tab-text">
+                        <p>Virtual content</p>
                     </div>
                 </div>
                 <!-- HELP TAB -->
@@ -175,11 +188,19 @@
                                 <br>
                                 <label for="email" class="help-form">Email <span class="req">*</span></label>
                                 <br>
-                                <input class="help-input" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Email" type="email" required>
+                                <input class="help-input" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" type="email" placeholder="Email" required>
+                                <br>
+                                <label for="phone" class="help-form">Phone number</label>
+                                <br>
+                                <input class="help-input" name="phone" pattern="[0-9]{7,9}" type="tel" placeholder="Phone number">
                                 <br>
                                 <label class="help-form">Where did you hear about us?</label>
                                 <br>
-                                <textarea class="help-textarea"></textarea>
+                                <textarea class="help-textarea1"></textarea>
+                                <br>
+                                <label class="help-form">Anything else?</label>
+                                <br>
+                                <textarea class="help-textarea2"></textarea>
                                 <p class="req-fields"><span class="req">* </span>Required fields</p>
                                 <button id="form-btn" type="submit">Send us a message</button>
                             </form>
@@ -187,22 +208,18 @@
                         <div id="help-right">
                             <p class="tab-title">CAN WE HELP YOUR COMPANY STAND OUT FROM THE CROWD?</p>
                             <p class="help-content">We'd love to help and to work with you. Please give us a few details and we'll get back to you soon.</p>
+                            <p class="tab-title work">WORK AT THOUGHTWORKS</p>
+                            <p class="help-content">For all our jobs</p>
+                            <a href="https://www.thoughtworks.com/careers/browse-jobs" class="work-btn" target="_blank">Join us</a>
                         </div>
                     </div>
-                </div>
-                <!-- ALL CONTENT -->
-                <div id="all-content" class="agent-content tab-text">
-                    <p>All content</p>
-                </div>
-                <!-- VIRTUAL CONTENT -->
-                <div id="virtual-content" class="agent-content tab-text">
-                    <p>Virtual content</p>
                 </div>
             </div>
         </div>
     </div>
     <!-- FOOTER -->
     <footer>Reto de <a class="footer-links" href="http://www.laboratoria.la" target="_blank">Laboratoria</a> - <a class="footer-links" href="https://github.com/itsandromeda" target="_blank">Annia J. Flores</a> | <a class="footer-links" href="https://github.com/EmmAlva" target="_blank">Emma Tapia</a> 2017.</footer>
+    <script type="text/javascript" src="Assets/js/data.js"></script>
     <script type="text/javascript" src="Assets/js/main.js"></script>
     <script type="text/javascript" src="Assets/js/sign-in.js"></script>
 </body>

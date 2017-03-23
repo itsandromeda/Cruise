@@ -33,10 +33,11 @@ header {
     font-size: 13px;
 }
 
-#user {
-    font-weight: 600px;
+#member {
+    font-weight: bold;
     color: white;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 #sign-out {
@@ -79,10 +80,6 @@ footer {
     color: #EF5BA1;
 }
 
-#main-container {
-    margin-bottom: 80px;
-}
-
 
 /*TITLE*/
 
@@ -91,7 +88,7 @@ h1 {
     font-weight: 900;
     color: #333333;
     width: 860px;
-    margin-top: 6%;
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     border-bottom: 2px solid #EEEEEE;
@@ -168,12 +165,12 @@ h1 {
 
 #help-left {
     float: left;
-    top: 30px;
+    top: 25px;
     position: absolute;
-    width: 450px;
-    height: 295px;
+    width: 410px;
+    height: 410px;
     margin-top: 15px;
-    border-right: 1px solid #B3B3B3;
+    border-right: 2px solid white;
 }
 
 .tab-text {
@@ -204,10 +201,19 @@ h1 {
     padding: 5px 5px 5px 5px;
 }
 
-.help-textarea {
+.help-textarea1 {
     padding: 5px 5px 5px 5px;
     width: 380px;
-    height: 70px;
+    height: 40px;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.help-textarea2 {
+    padding: 5px 5px 5px 5px;
+    width: 380px;
+    height: 55px;
     resize: none;
     border: none;
     outline: none;
@@ -216,30 +222,46 @@ h1 {
 #form-btn {
     background-color: black;
     color: white;
+    margin-top: -10px;
     padding: 10px 10px 10px 10px;
     border: none;
 }
 
 #help-right {
     float: right;
-    margin-left: -50px;
-    width: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 400px;
     height: 300px;
-    left: 0;
 }
 
 .tab-title {
     color: #333333;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 15px;
     font-style: italic;
     padding-bottom: 8px;
+    margin-right: auto;
+    margin-left: auto;
     border-bottom: 1px solid #B3B3B3;
+}
+
+.work {
+    padding-top: 30px;
+}
+
+.work-btn {
+    background-color: #A17861;
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
 }
 
 .help-content {
     color: #777777;
-    font-size: 12px;
+    font-size: 13px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
@@ -252,14 +274,13 @@ i {
     font-size: 12px;
 }
 
-specify-resources {
-    margin-right: 10px;
-    color: black;
+#main-container {
+    margin-bottom: 60px;
 }
 
 #sub-container {
     width: 874px;
-    height: 375px;
+    height: 495px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -275,7 +296,7 @@ specify-resources {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 870px;
-    height: 350px;
+    height: 470px;
     position: absolute;
     bottom: 0;
 }
@@ -298,8 +319,8 @@ specify-resources {
     float: left;
     top: 30px;
     position: absolute;
-    width: 595px;
-    height: 325px;
+    width: 650px;
+    height: 435px;
     margin-top: 0px;
     padding-top: 6px;
 }
@@ -307,9 +328,11 @@ specify-resources {
 .idle {
     background-color: #808285;
     border-radius: 10px;
-    width: 580px;
-    height: 55px;
+    width: 625px;
+    min-height: 55px;
+    overflow: auto;
     margin: 10px 8px 10px 12px;
+    padding-bottom: 3px;
 }
 
 .circle {
@@ -372,39 +395,48 @@ specify-resources {
 .building {
     background-color: #6a92cc;
     border-radius: 10px;
-    width: 580px;
-    height: 55px;
+    width: 625px;
+    min-height: 55px;
+    overflow: auto;
     margin: 10px 0 10px 12px;
+    padding-bottom: 3px;
 }
 
 #right-content {
     color: #333333;
     float: right;
-    width: 275px;
-    height: 325px;
+    width: 185px;
+    height: 420px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 10px;
+    border-left: 2px solid white;
 }
 
 #Summary {
     height: 100px;
-    width: 250px;
-    margin-left: 15px;
-    margin-top: -5px;
+    width: 180px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -15px;
 }
 
 h5 {
     font-weight: 600;
+    width: 180px;
     border-bottom: 1px solid gray;
 }
 
 .summary-details,
 .history-list {
     margin-top: -10px;
-    width: 250px;
+    width: 180px;
 }
 
 #History {
-    width: 250px;
-    margin-left: 15px;
+    width: 180px;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: -25px;
 }
 
@@ -458,7 +490,7 @@ input {
     border-bottom: 0.5px solid white;
     margin-bottom: 10px;
     padding: 0 5px 0 5px;
-    width: 220px;
+    width: 215px;
     visibility: visible;
     outline: none;
 }
