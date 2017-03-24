@@ -7,6 +7,8 @@ html {
 body {
     margin: 0px;
     padding: 0px;
+    width: 100%;
+    height: 100%;
 }
 
 button {
@@ -18,9 +20,7 @@ button {
 
 header {
     top: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
+    position: relative;
     color: white;
     height: 32px;
     background-color: #EF5BA1;
@@ -62,9 +62,12 @@ header {
 
 footer {
     font-size: 12px;
+    position: absolute;
     text-align: center;
     padding-top: 4px;
     bottom: 0;
+    right: 0;
+    left: 0;
     background-color: #808285;
     color: white;
     height: 22px;
@@ -88,7 +91,7 @@ h1 {
     font-weight: 900;
     color: #333333;
     width: 860px;
-    margin-top: 5%;
+    padding-top: 4%;
     margin-left: auto;
     margin-right: auto;
     border-bottom: 2px solid #EEEEEE;
@@ -275,7 +278,7 @@ i {
 }
 
 #main-container {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
 }
 
 #sub-container {
