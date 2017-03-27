@@ -71,6 +71,7 @@ helpBtn.addEventListener('click', function () {
     agentsBtn.style.backgroundColor = "#808285";
     helpBtn.style.backgroundColor = "black";
 });
+
 /*DISPLAY AGENTS TAB CONTENT*/
 function displayAgentsTab(tab) {
     "use strict";
@@ -110,13 +111,11 @@ var i,
     resourcesSpan;
 
 //PHYSICAL AGENTS
-/*Retorna a los objetos con tipo 'physical'*/
 var physicalAgents = data.agents.filter(function (e) {
     "use strict";
     return e.type === 'physical';
 });
 
-/*Retorna un array con los resources del objeto*/
 var resources = data.agents.map(function (e) {
     "use strict";
     return e.resource;
@@ -128,22 +127,22 @@ for (i = 0; i < physicalAgents.length; i += 1) {
     document.getElementById("details" + i).innerHTML = " | " + data.agents[i].status + " | " + data.agents[i].ip + " | " + data.agents[i].path;
 }
 
-/*Crea un array con los resources del agente en la posición 0*/
+
 var res0 = data.agents[0].resource.filter(function (e) {
     "use strict";
     return e;
 });
-/*Crea un array con los resources del agente en la posición 1*/
+
 var res1 = data.agents[1].resource.filter(function (e) {
     "use strict";
     return e;
 });
-/*Crea un array con los resources del agente en la posición 2*/
+
 var res2 = data.agents[2].resource.filter(function (e) {
     "use strict";
     return e;
 });
-/*Crea un array con los resources del agente en la posición 3*/
+
 var res3 = data.agents[3].resource.filter(function (e) {
     "use strict";
     return e;
@@ -178,8 +177,8 @@ function print(array, resourcesSpace) {
     }
 }
 
-print(res0, "data-re0"); //El primer parámetro es el array de resources que filtré  
-print(res1, "data-re1"); //Como segundo parámetro envío el id del espacio que tomará en el documento
+print(res0, "data-re0");
+print(res1, "data-re1");
 print(res2, "data-re2");
 print(res3, "data-re3");
 
@@ -333,7 +332,6 @@ window.addEventListener("load", function () {
 /*BUILDING & IDLE*/
 var idleContent = document.getElementById("idleContent"),
     buildingContent = document.getElementById("buildingContent");
-    //activeUsers = document.getElementsByClassName("building");
 
 var idleUsers = data.agents.filter(function (e) {
     "use strict";
