@@ -345,3 +345,47 @@ var activeUsers = data.agents.filter(function (e) {
 
 idleContent.innerHTML = idleUsers.length;
 buildingContent.innerHTML = activeUsers.length;
+
+/*FORM*/
+
+var element = document.querySelector(".form-sub");//trae el primer elemento de la "clase"; tbm se pudo haber usado: document.getElementsByClassName("form-sub")[0];
+element.addEventListener("submit", function(event) {
+  event.preventDefault();
+  send();
+});
+
+function send(){
+    "use strict";
+    var name = document.getElementById("name").value,
+        email = document.getElementById("email").value,
+        phone = document.getElementById("phone").value,
+        alert0 = document.getElementById("err00"),
+        alert1 = document.getElementById("err01"),
+        alert2 = document.getElementById("err02");
+
+    if (name === null || name.length === 0 || /[0-9]+/.test(name) || /[^A-ZÁÉÍÓÚ a-zñáéíóú]+/.test(name)) {
+        alert0.innerHTML = "Complete el campo 'Nombre' solo con letras";
+        document.getElementById("name").focus();
+        return false;
+    } 
+    else if (/^([A-ZÁÉÍÓÚ a-zñáéíóú\s\D]*)/.test(name)) {
+        alert0.innerHTML = "";
+        document.getElementById("email").focus();
+    }
+    if (email.length === 0 || /[\w]+@{1}[\w\-]+\.[a-z]{2,3}/.test(email) === false) {
+        alert1.innerHTML = "Ingrese email correctamente: \n (example@hosting.dominio)";
+        return false;
+    } else {
+        alert1.innerHTML = "";
+        document.getElementById("phone").focus();
+    }
+    if(/[0-9]+/.test(phone) === false){
+        alert2.innerHTML = "Ingrese solo números";
+        return false;
+    }
+    else{
+        alert2.innerHTML = "";
+    }
+    element.reset();
+}
+

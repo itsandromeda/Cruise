@@ -519,3 +519,9 @@ input {
     background-color: black;
     color: white;
 }
+
+/*FORM*/
+.form-sub input:focus{
+    border-color: #4A25B5;
+    box-shadow: 0 0 7px #A852D4;
+}

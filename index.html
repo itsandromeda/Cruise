@@ -181,20 +181,24 @@
                     </div>
                     <div class="tab-text">
                         <div id="help-left">
-                            <form>
-                                <label for="name" class="help-form">Name <span class="req">*</span></label>
+                            <form class="form-sub">
+                                <label for="name" class="help-form">Name <span class="req">*</span><span id="err00"></span></label>
                                 <br>
-                                <input class="help-input" name="name" pattern="[^0-9]*" placeholder="Name" type="text" required>
+                                <input id="name" class="help-input" name="name" placeholder="Name" type="text"  
+                                        oninvalid="setCustomValidity('El campo Nombre admite solo letras')"
+                                        oninput="setCustomValidity('')">
                                 <br>
-                                <label for="email" class="help-form">Email <span class="req">*</span></label>
+                                <label for="email" class="help-form">Email <span class="req">*</span><span id="err01"></span></label>
                                 <br>
-                                <input class="help-input" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" type="email" placeholder="Email" required>
+                                <input id="email"  class="help-input" name="email" type="email" placeholder="Email">
                                 <br>
-                                <label for="phone" class="help-form">Phone number</label>
+                                <label for="phone" class="help-form">Phone number</label><span class="req">*</span><span id="err02"></span>
                                 <br>
-                                <input class="help-input" name="phone" pattern="[0-9]{7,9}" type="tel" placeholder="Phone number">
+                                <input id="phone" class="help-input" name="phone" type="tel" placeholder="Phone number"
+                                        oninvalid="setCustomValidity('Ingrese solo números')"
+                                        oninput="setCustomValidity('')">
                                 <br>
-                                <label class="help-form">Where did you hear about us?</label>
+                                <label id="where" class="help-form">Where did you hear about us?</label>
                                 <br>
                                 <textarea class="help-textarea1"></textarea>
                                 <br>
