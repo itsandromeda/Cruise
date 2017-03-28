@@ -12,6 +12,8 @@ window.addEventListener('load', function () {
             users,
             i;
 
+        sessionStorage.setItem("usuario", username);
+
         users = [{
             id: "itsandromeda",
             username: "itsandromeda",

@@ -1,5 +1,7 @@
 /*global window, document, data, console, alert, send*/
 /*jslint regexp: true*/
+var user = document.getElementById("member");
+    user.innerHTML = sessionStorage.getItem("usuario").toUpperCase();
 
 /*SHOW TABS*/
 window.addEventListener('load', function () {
