@@ -1,4 +1,5 @@
-/*global window, document, data, console*/
+/*global window, document, data, console, alert, send*/
+/*jslint regexp: true*/
 
 /*SHOW TABS*/
 window.addEventListener('load', function () {
@@ -16,11 +17,6 @@ function displayTabs(tab) {
 
     for (i = 0; i < tabContent.length; i += 1) {
         tabContent[i].style.display = "none";
-    }
-
-    agentContent = document.getElementsByClassName("agent-content");
-    for (i = 0; i < agentContent.length; i += 1) {
-        agentContent[i].style.display = "none";
     }
 
     document.getElementById("physical").click();
@@ -127,7 +123,6 @@ for (i = 0; i < physicalAgents.length; i += 1) {
     document.getElementById("details" + i).innerHTML = " | " + data.agents[i].status + " | " + data.agents[i].ip + " | " + data.agents[i].path;
 }
 
-
 var res0 = data.agents[0].resource.filter(function (e) {
     "use strict";
     return e;
@@ -219,10 +214,11 @@ btn1.addEventListener('click', function (e) {
 
     if (addResources) {
         splitResources = addResources.split(',');
-        blockPos = parseInt(e.target.getAttribute('data-add'), 10);
+        blockPos = e.target.getAttribute('data-add');
 
         for (i = 0; i < splitResources.length; i += 1) {
             trimmed = splitResources[i].trim();
+
             if (trimmed) {
                 document.getElementById('data-re0').appendChild(pushArray(blockPos, trimmed));
             }
@@ -345,3 +341,41 @@ var activeUsers = data.agents.filter(function (e) {
 
 idleContent.innerHTML = idleUsers.length;
 buildingContent.innerHTML = activeUsers.length;
+
+/*FORM*/
+var element = document.querySelector(".form-sub"); //trae el primer elemento de la "clase"; tbm se pudo haber usado: document.getElementsByClassName("form-sub")[0];
+element.addEventListener("submit", function (event) {
+    "use strict";
+    event.preventDefault();
+    send();
+});
+
+function send() {
+    "use strict";
+    var name = document.getElementById("name").value,
+        email = document.getElementById("email").value,
+        phone = document.getElementById("phone").value,
+        alert0 = document.getElementById("err00"),
+        alert1 = document.getElementById("err01"),
+        alert2 = document.getElementById("err02");
+
+    if (name === null || name.length === 0 || /[0-9]+/.test(name) || /[^A-ZÁÉÍÓÚ a-zñáéíóú]+/.test(name)) {
+        alert0.innerHTML = "Fill out the field correctly, use only letters.";
+        return false;
+    } else if (/^([A-ZÁÉÍÓÚ a-zñáéíóú\s\D]*)/.test(name)) {
+        alert0.innerHTML = "";
+    }
+    if (email.length === 0 || /[\w]+@{1}[\w\-]+\.[a-z]{2,3}/.test(email) === false) {
+        alert1.innerHTML = "Please use a valid format: (example@hosting.domain)";
+        return false;
+    } else {
+        alert1.innerHTML = "";
+    }
+    if (/[0-9]+/.test(phone) === false) {
+        alert2.innerHTML = "Ingrese solo números";
+        return false;
+    } else {
+        alert2.innerHTML = "";
+    }
+    element.reset();
+}
