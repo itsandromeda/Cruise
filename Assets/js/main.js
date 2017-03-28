@@ -1,11 +1,18 @@
 /*global window, document, data, console, alert, send*/
 /*jslint regexp: true*/
-var user = document.getElementById("member");
-    user.innerHTML = sessionStorage.getItem("usuario").toUpperCase();
 
 /*SHOW TABS*/
 window.addEventListener('load', function () {
     "use strict";
+
+    var user = sessionStorage.getItem("usuario");
+    if(user == null) {
+        window.location = "sign-in.html"
+    } else{
+        var userSpan = document.getElementById("member");
+        userSpan.innerHTML = user.toUpperCase();
+     }
+     
     document.getElementById("default").click();
 });
 /*DISPLAY TABS*/
@@ -363,18 +370,21 @@ function send() {
 
     if (name === null || name.length === 0 || /[0-9]+/.test(name) || /[^A-ZÁÉÍÓÚ a-zñáéíóú]+/.test(name)) {
         alert0.innerHTML = "Fill out the field correctly, use only letters.";
+        document.getElementById("name").focus();
         return false;
     } else if (/^([A-ZÁÉÍÓÚ a-zñáéíóú\s\D]*)/.test(name)) {
         alert0.innerHTML = "";
     }
     if (email.length === 0 || /[\w]+@{1}[\w\-]+\.[a-z]{2,3}/.test(email) === false) {
         alert1.innerHTML = "Please use a valid format: (example@hosting.domain)";
+        document.getElementById("email").focus();
         return false;
     } else {
         alert1.innerHTML = "";
     }
     if (/[0-9]+/.test(phone) === false) {
         alert2.innerHTML = "Ingrese solo números";
+        document.getElementById("phone").focus();        
         return false;
     } else {
         alert2.innerHTML = "";

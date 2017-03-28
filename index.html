@@ -17,7 +17,7 @@
     <!-- NAVIGATION BAR -->
     <header>
         <div id="header-text">
-            SIGNED IN AS <span id="member">MEMBER</span>
+            SIGNED IN AS <span id="member"></span>
             <a href="sign-out.html" id="sign-out"><i class="fa fa-arrow-circle-right"></i> SIGN OUT</a>
         </div>
     </header>
@@ -185,9 +185,7 @@
                             <form class="form-sub">
                                 <label for="name" class="help-form">Name <span class="req">*</span><span id="err00"></span></label>
                                 <br>
-                                <input id="name" class="help-input" name="name" placeholder="Name" type="text"  
-                                        oninvalid="setCustomValidity('El campo Nombre admite solo letras')"
-                                        oninput="setCustomValidity('')">
+                                <input id="name" class="help-input" name="name" placeholder="Name" type="text" >
                                 <br>
                                 <label for="email" class="help-form">Email <span class="req">*</span><span id="err01"></span></label>
                                 <br>
@@ -195,9 +193,7 @@
                                 <br>
                                 <label for="phone" class="help-form">Phone number</label><span class="req">*</span><span id="err02"></span>
                                 <br>
-                                <input id="phone" class="help-input" name="phone" type="tel" placeholder="Phone number"
-                                        oninvalid="setCustomValidity('Ingrese solo números')"
-                                        oninput="setCustomValidity('')">
+                                <input id="phone" class="help-input" name="phone" type="tel" placeholder="Phone number">
                                 <br>
                                 <label id="where" class="help-form">Where did you hear about us?</label>
                                 <br>
@@ -226,7 +222,6 @@
     <footer>Reto de <a class="footer-links" href="http://www.laboratoria.la" target="_blank">Laboratoria</a> - <a class="footer-links" href="https://github.com/itsandromeda" target="_blank">Annia J. Flores</a> | <a class="footer-links" href="https://github.com/EmmAlva" target="_blank">Emma Tapia</a> 2017.</footer>
     <script type="text/javascript" src="Assets/js/data.js"></script>
     <script type="text/javascript" src="Assets/js/main.js"></script>
-    <script type="text/javascript" src="Assets/js/sign-in.js"></script>
 </body>
 
 </html>
