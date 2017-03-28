@@ -21,8 +21,10 @@ header {
     right: 0;
 }
 
-input {
+::-webkit-input-placeholder  {
     outline: none;
+    color: #C7DCD7;
+    font-style: italic;
 }
 
 .fa-search {
