@@ -1,4 +1,4 @@
-/*global window, document, data, console*/
+/*global window, document, data, console, alert*/
 
 /*SHOW TABS*/
 window.addEventListener('load', function () {
@@ -16,11 +16,6 @@ function displayTabs(tab) {
 
     for (i = 0; i < tabContent.length; i += 1) {
         tabContent[i].style.display = "none";
-    }
-
-    agentContent = document.getElementsByClassName("agent-content");
-    for (i = 0; i < agentContent.length; i += 1) {
-        agentContent[i].style.display = "none";
     }
 
     document.getElementById("physical").click();
@@ -127,7 +122,6 @@ for (i = 0; i < physicalAgents.length; i += 1) {
     document.getElementById("details" + i).innerHTML = " | " + data.agents[i].status + " | " + data.agents[i].ip + " | " + data.agents[i].path;
 }
 
-
 var res0 = data.agents[0].resource.filter(function (e) {
     "use strict";
     return e;
@@ -219,10 +213,11 @@ btn1.addEventListener('click', function (e) {
 
     if (addResources) {
         splitResources = addResources.split(',');
-        blockPos = parseInt(e.target.getAttribute('data-add'), 10);
+        blockPos = e.target.getAttribute('data-add');
 
         for (i = 0; i < splitResources.length; i += 1) {
             trimmed = splitResources[i].trim();
+            
             if (trimmed) {
                 document.getElementById('data-re0').appendChild(pushArray(blockPos, trimmed));
             }
@@ -345,3 +340,27 @@ var activeUsers = data.agents.filter(function (e) {
 
 idleContent.innerHTML = idleUsers.length;
 buildingContent.innerHTML = activeUsers.length;
+
+/*FORM*/
+var send = document.getElementById("form-btn");
+
+send.addEventListener('click', function () {
+    "use strict";
+	var name = document.getElementById("name").value,
+        email = document.getElementById("email").value,
+        phone = document.getElementById("phone").value;
+
+	if (name === null || name.length === 0 || /[0-9]+/.test(name) || /[A-ZÁÉÍÓÚ a-zñáéíóú]^.+/.test(name)) {
+		alert("Complete el campo 'Nombre' solo con letras");
+		return false;
+    } else if (name.search(/^([A-ZÁÉÍÓÚ a-zñáéíóú\s\D]*)/)) {
+		email.focus();
+	}
+	
+	if (email.length === 0 || /[\w\-]+@{1}[\w\-]+\.[a-z]{2,3}/.test(email) === false) {
+		alert("Ingrese email correctamente: \n (example@hosting.dominio)");
+		return false;
+    } else {
+        phone.focus();
+    }
+});
