@@ -17,21 +17,19 @@ window.addEventListener('load', function () {
         users = [{
             id: "itsandromeda",
             username: "itsandromeda",
-            password: "itsandromeda",
-            cruise: "index.html?id=itsandromeda"
+            password: "itsandromeda"
         }, {
             id: "emma",
             username: "emma",
-            password: "emma",
-            cruise: "index.html?id=emma"
+            password: "emma"
         }];
 
         for (i = 0; i < users.length; i += 1) {
             if (username == users[0].username && password == users[0].password) {
-                window.location = users[0].cruise;
+                window.location = "index.html";
             }
             if (username == users[1].username && password == users[1].password) {
-                window.location = users[1].cruise;
+                window.location = "index.html";
             }
             /*USERNAME VALIDATION*/
             if (username === "") {
