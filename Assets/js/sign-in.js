@@ -1,4 +1,4 @@
-/*global document, window*/
+/*global document, window, sessionStorage*/
 /*jslint eqeq: true*/
 window.addEventListener('load', function () {
     "use strict";

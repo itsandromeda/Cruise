@@ -6,14 +6,14 @@ window.addEventListener('load', function () {
     "use strict";
     var user = sessionStorage.getItem("usuario"),
         userSpan;
-    
+
     if (user === null) {
         window.location = "sign-in.html";
     } else {
         userSpan = document.getElementById("member");
         userSpan.innerHTML = user.toUpperCase();
     }
-     
+
     document.getElementById("default").click();
 });
 /*DISPLAY TABS*/
@@ -384,7 +384,7 @@ function send() {
         alert1.innerHTML = "";
     }
     if (/[0-9]+/.test(phone) === false) {
-        alert2.innerHTML = "Ingrese solo números";
+        alert2.innerHTML = "Fill out just with numbers";
         document.getElementById("phone").focus();
         return false;
     } else {

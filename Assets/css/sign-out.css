@@ -25,6 +25,12 @@ input {
     outline: none;
 }
 
+::-webkit-input-placeholder {
+    outline: none;
+    color: #C7DCD7;
+    font-style: italic;
+}
+
 .fa-search {
     margin-right: 15px;
 }
