@@ -1,17 +1,18 @@
-/*global window, document, data, console, alert, send*/
+/*global window, document, data, console, alert, send, sessionStorage*/
 /*jslint regexp: true*/
 
 /*SHOW TABS*/
 window.addEventListener('load', function () {
     "use strict";
-
-    var user = sessionStorage.getItem("usuario");
-    if(user == null) {
-        window.location = "sign-in.html"
-    } else{
-        var userSpan = document.getElementById("member");
+    var user = sessionStorage.getItem("usuario"),
+        userSpan;
+    
+    if (user === null) {
+        window.location = "sign-in.html";
+    } else {
+        userSpan = document.getElementById("member");
         userSpan.innerHTML = user.toUpperCase();
-     }
+    }
      
     document.getElementById("default").click();
 });
@@ -384,7 +385,7 @@ function send() {
     }
     if (/[0-9]+/.test(phone) === false) {
         alert2.innerHTML = "Ingrese solo números";
-        document.getElementById("phone").focus();        
+        document.getElementById("phone").focus();
         return false;
     } else {
         alert2.innerHTML = "";
