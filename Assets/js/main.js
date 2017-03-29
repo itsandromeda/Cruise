@@ -383,7 +383,7 @@ function send() {
         alert1.innerHTML = "";
     }
     if (/[0-9]+/.test(phone) === false) {
-        alert2.innerHTML = "Ingrese solo números";
+        alert2.innerHTML = "Fill out just with numbers";
         document.getElementById("phone").focus();        
         return false;
     } else {
